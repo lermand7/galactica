@@ -10,13 +10,13 @@ const PORT = process.env.PORT || 8080; // Step 1
 const routes = require('./routes/api');
 
 // Step 2
-mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/test', {
+mongoose.connect(process.env.MONGODB_URI || "mongodb+srv://admin:dbpassword@galactica.qkczg.mongodb.net/test?retryWrites=true&w=majority" ||'mongodb://localhost/test', {
     useNewUrlParser: true,
     useUnifiedTopology: true
 });
 
 mongoose.connection.on('connected', () => {
-    console.log('Mongoose is connected!!!!');
+    console.log('Mongoose is connected!');
 });
 
 // Data parsing

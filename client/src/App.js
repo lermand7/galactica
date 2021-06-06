@@ -1,7 +1,9 @@
 import React from 'react';
 import axios from 'axios';
-
 import './App.css';
+import NavBar from "./components/NavBar";
+import Content from "./components/Content";
+import { BrowserRouter as Router, Switch, Route} from "react-router-dom";
 
 class App extends React.Component {
 
@@ -85,6 +87,13 @@ class App extends React.Component {
     //JSX
     return(
       <div className="app">
+        <>
+          <Router>
+            <NavBar />
+            <Content />
+          </Router>
+        </>
+
         <h2>Welcome to the best app ever</h2>
         <form onSubmit={this.submit}>
           <div className="form-input">

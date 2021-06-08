@@ -1,11 +1,12 @@
 .about-div-wrapper {
     position: relative;
-    padding-top: 0px;
+    background-color: black;
+    padding-top: 180px;
 }
 
 .about-div {
     position: absolute;
-    top: 15%;
+    top: 30%;
     left: 53%;
 }
 
@@ -51,6 +52,7 @@ img {
     .about-div {
         left: 2%;
         margin-left: 10px;
+        top: 20%;
     }
 
     .p-1, .p-2, .p-3{
@@ -60,7 +62,6 @@ img {
     }
 
     .about-div-wrapper {
-        background-color: black;
         padding-top: 300px;
     }
 

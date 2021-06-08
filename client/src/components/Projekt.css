@@ -1,0 +1,23 @@
+.projekt-div-wrapper {
+    position: relative;
+    background-color: black;
+}
+
+.projekt-div-wrapper h1{
+    text-align: center;
+    padding: 10px 0 20px;
+}
+
+table {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+th, td {
+    padding: 5px;
+    /*border: 1px solid #ffdd40;*/
+}
+
+.car-video {
+    width: 100%;
+}

@@ -8,7 +8,7 @@ function About()
     return (
         <>
             <div className="about-div-wrapper">
-                <img src={earth} alt="Föld"></img>
+                <img src={earth} alt="Föld" className="about-link"></img>
                 <div className="about-div">
                     <h1>A nevem Lejer Armand</h1>
                     <p className="p-1">Programtervező informatikusnak tanulok.</p>

@@ -22,17 +22,22 @@ function NavBar()
                     <div className="nav-spacer"></div>
                     <ul className={click ? "nav-menu active" : "nav-menu"}>
                         <li className="nav-item">
-                            <Link activeClass="active" to="home" spy={true} smooth={true} offset={-80} duration={600} className="nav-link" onClick={handleClick}>
+                            <Link activeClass="active" to="home" spy={true} smooth={true} offset={-80} duration={700} className="nav-link" onClick={handleClick}>
                                 Haza
                             </Link>
                         </li>
                         <li className="nav-item">
-                            <Link to="projekt" spy={true} smooth={true} offset={-80} duration={600} className="nav-link" onClick={handleClick}>
+                            <Link to="about" spy={true} smooth={true} offset={-80} duration={700} className="nav-link" onClick={handleClick}>
+                                Rólam
+                            </Link>
+                        </li>
+                        <li className="nav-item">
+                            <Link to="projekt" spy={true} smooth={true} offset={-80} duration={700} className="nav-link" onClick={handleClick}>
                                 Projektek
                             </Link>
                         </li>
                         <li className="nav-item">
-                            <Link to="contact" spy={true} smooth={true} offset={-80} duration={600} className="nav-link" onClick={handleClick}>
+                            <Link to="contact" spy={true} smooth={true} offset={-80} duration={700} className="nav-link" onClick={handleClick}>
                                 Kapcsolat
                             </Link>
                         </li>

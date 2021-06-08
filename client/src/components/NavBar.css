@@ -75,11 +75,12 @@
     color: #ffdd40;
   }
   
-  .nav-icon {
+  .nav-container .nav-icon {
     display: none;
+    bottom: 45px;
   }
   
-  @media screen and (max-width: 960px) {
+  @media screen and (max-width: 1060px) {
     .nav-menu {
       display: flex;
       flex-direction: column;
@@ -112,13 +113,13 @@
       display: table;
     }
   
-    .nav-icon {
+    .nav-container .nav-icon {
       display: block;
       position: absolute;
       top: 0;
       right: 0;
-      transform: translate(-100%, 60%);
-      font-size: 1.8rem;
+      transform: translate(-50%, 60%);
+      width: 50px;
       cursor: pointer;
       color: #ffdd40;
     }

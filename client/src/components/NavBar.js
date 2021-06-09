@@ -37,7 +37,7 @@ function NavBar()
                             </Link>
                         </li>
                         <li className="nav-item">
-                            <Link to="contact" spy={true} smooth={true} offset={-80} duration={700} className="nav-link" onClick={handleClick}>
+                            <Link to="more" spy={true} smooth={true} offset={-80} duration={700} className="nav-link" onClick={handleClick}>
                                 Kapcsolat
                             </Link>
                         </li>

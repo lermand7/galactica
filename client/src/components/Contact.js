@@ -73,7 +73,7 @@ class Contact extends React.Component
         };
 
         return names.map((name, index) => (
-            <span key={index}>{name.name}&nbsp;&nbsp;&nbsp;&nbsp;</span>
+            <p key={index}>{name.name}</p>
             ));
     };
 
@@ -84,6 +84,9 @@ class Contact extends React.Component
         return(
             <>
                 <div className="contact-div-wrapper">
+                    <div className="more">
+                        <h2>És még sok más...</h2>
+                    </div>
                     <h1>Kapcsolat</h1>
                     <table>
                         <thead>
@@ -108,7 +111,7 @@ class Contact extends React.Component
                                 </th>
                                 <th>
                                     <div className="names">
-                                        <h1>Itt voltak:</h1>
+                                        <h2>Itt voltak:</h2>
                                         {this.displayNames(this.state.names)}
                                     </div>
                                 </th>

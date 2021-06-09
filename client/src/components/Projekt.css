@@ -35,15 +35,15 @@ table {
 }
 
 @media only screen and (max-width: 1060px) {
-    thead th:not(:first-child) {
+    .projekt-div-wrapper thead th:not(:first-child) {
         display: none;
     }
 
-    td, th {
+    .projekt-div-wrapper td, th {
         display: block;
     }
 
-    td[data-th]:before  {
+    .projekt-div-wrapper td[data-th]:before  {
         content: attr(data-th);
     }
 

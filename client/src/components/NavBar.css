@@ -47,9 +47,6 @@
     height: 100%;
     border-bottom: 3px solid transparent;
   }
-  .fa-code {
-    margin-left: 1rem;
-  }
   
   .nav-item {
     line-height: 40px;
@@ -78,6 +75,7 @@
   .nav-container .nav-icon {
     display: none;
     bottom: 45px;
+    font-size: 30px;
   }
   
   @media screen and (max-width: 1060px) {
@@ -118,7 +116,7 @@
       position: absolute;
       top: 0;
       right: 0;
-      transform: translate(-50%, 60%);
+      transform: translate(0%, 60%);
       width: 50px;
       cursor: pointer;
       color: #ffdd40;

@@ -8,7 +8,7 @@ const name = require('../models/name');
 // Routes
 router.get('/', (req, res) => {
 
-    name.find({  })
+    name.find({  }).sort({_id:-1}).limit(10)
         .then((data) => {
             console.log('Data: ', data);
             res.json(data);

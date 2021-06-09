@@ -1,6 +1,6 @@
 .contact-div-wrapper {
     background-color: #212930;
-    height: 300px;
+    height: 100%;
     width: 100%;
 }
 
@@ -24,13 +24,30 @@
 
 .contact-div-wrapper th{
     width: 300px;
-    border: 2px solid #ffdd40;
+}
+
+.contact-div-wrapper table{
+    table-layout: fixed;
 }
 
 .names {
-    display: table;
+    width: 100%;
     margin: auto;
     text-align: center;
+    word-wrap: break-word;
+}
+
+.names h2{
+    color: #ffdd40;
+    font-size: 1.4rem;
+    letter-spacing: 2px;
+    margin: 8px;
+}
+
+.names p {
+    display: inline-block;
+    font-size: 1.2rem;
+    margin: 10px;
 }
 
 .name-display {
@@ -40,7 +57,7 @@
 }
 
 .form-text {
-    margin: 50px auto 10px;
+    margin: 100px auto 10px;
     color: #ffdd40;
     font-weight: normal;
     font-size: 1.2rem;
@@ -48,8 +65,9 @@
 }
 
 form {
-    margin: 0px;
+    margin: 0px auto;
     width: 100%;
+    max-width: 600px;
 }
 
 button {
@@ -69,4 +87,32 @@ input {
 
 span {
     color: #ffdd40;
+    table-layout: fixed;
+}
+
+.more {
+    height: 200px;
+    background-color: black;
+}
+
+.more h2{
+    margin-top: 50px;
+    color: #ffdd40;
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+@media only screen and (max-width: 1060px) {
+    .contact-div-wrapper th {
+        width: 90%;
+        margin: auto;
+    }
+
+    .contact-div-wrapper {
+        height: 100%;
+    }
+
+    .contact-div-wrapper p{
+        font-size: 1.2rem;
+    }
 }

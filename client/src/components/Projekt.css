@@ -13,11 +13,41 @@ table {
     margin: 0 auto;
   }
 
-th, td {
+.projekt-div-wrapper th, td {
     padding: 5px;
     /*border: 1px solid #ffdd40;*/
 }
 
 .car-video {
     width: 100%;
+}
+
+.projekt-div-wrapper img {
+    width: 100%;
+}
+
+.projekt-div-wrapper h1 {
+    margin: auto auto 10px;
+    color: #ffdd40;
+    letter-spacing: 2px;
+    font-weight: normal;
+    font-size: 2rem;
+}
+
+@media only screen and (max-width: 1060px) {
+    thead th:not(:first-child) {
+        display: none;
+    }
+
+    td, th {
+        display: block;
+    }
+
+    td[data-th]:before  {
+        content: attr(data-th);
+    }
+
+    .projekt-div-wrapper h1 {
+        font-size: 1.5rem;
+    }
 }

@@ -123,4 +123,8 @@
       cursor: pointer;
       color: #ffdd40;
     }
+
+    .nav-logo {
+      font-size: 2rem;
+    }
   }

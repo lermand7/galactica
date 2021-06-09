@@ -10,12 +10,12 @@
     left: 53%;
 }
 
-.about h1 {
+.about-div h1 {
     margin: auto auto 20px;
     color: #ffdd40;
     letter-spacing: 2px;
     font-weight: normal;
-    font-size: 2.5rem;
+    font-size: 2rem;
 }
 
 .p-1 {
@@ -39,7 +39,7 @@
     margin-left: 100px;
 }
 
-img {
+.about-div-wrapper img {
     width: 100%;
 }
 
@@ -65,8 +65,8 @@ img {
         padding-top: 300px;
     }
 
-    .about h1 {
-        font-size: 1.5rem;
+    .about-div h1 {
+        font-size: 1.3rem;
     }
 
     .about-div-wrapper .nav-link {

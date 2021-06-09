@@ -1,0 +1,72 @@
+.contact-div-wrapper {
+    background-color: #212930;
+    height: 300px;
+    width: 100%;
+}
+
+.contact-div-wrapper h1{
+    margin: auto auto 10px;
+    color: #ffdd40;
+    letter-spacing: 2px;
+    font-weight: normal;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.contact-div-wrapper p{
+    margin: auto auto 10px;
+    color: #ffdd40;
+    letter-spacing: 2px;
+    font-weight: normal;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.contact-div-wrapper th{
+    width: 300px;
+    border: 2px solid #ffdd40;
+}
+
+.names {
+    display: table;
+    margin: auto;
+    text-align: center;
+}
+
+.name-display {
+    position: absolute;
+    width: 100px;
+    margin: 100px;
+}
+
+.form-text {
+    margin: 50px auto 10px;
+    color: #ffdd40;
+    font-weight: normal;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+form {
+    margin: 0px;
+    width: 100%;
+}
+
+button {
+    position: relative;
+    width: 100px;
+    float: right;
+}
+
+.form-input {
+    overflow: hidden;
+    padding-right: 0.5rem;
+}
+
+input {
+    width: 100%;
+}
+
+span {
+    color: #ffdd40;
+}

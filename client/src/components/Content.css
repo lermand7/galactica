@@ -35,7 +35,7 @@ div {
     text-align: center;
 }
 
-h1 {
+.home-div-center h1 {
     margin: auto auto;
     color: #ffdd40;
     letter-spacing: 2px;
@@ -43,7 +43,7 @@ h1 {
     font-size: 2rem;
 }
 
-.fa {
+.home-div-center .fa {
     font-size: 3rem;
     color: #ffdd40;
     cursor: pointer;
@@ -52,5 +52,13 @@ h1 {
 @media screen and (max-width: 1060px) {
     .home-video {
         width: 1060px;
+    }
+
+    .home-div-center h1 {
+        margin: auto auto;
+        color: #ffdd40;
+        letter-spacing: 2px;
+        font-weight: normal;
+        font-size: 1.5rem;
     }
 }

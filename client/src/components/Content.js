@@ -3,6 +3,7 @@ import {Link} from 'react-scroll'
 import "./Content.css";
 import About from "./About.js";
 import Projekt from "./Projekt.js";
+import Contact from "./Contact.js";
 import particles from "../video/particles_1.mp4";
 
 function Content()
@@ -28,8 +29,8 @@ function Content()
             <div className="projekt">
                 <Projekt />
             </div> 
-            <div className="contact" style={{height: 500}}>
-                <h1>This is Contact section</h1>
+            <div className="contact">
+                <Contact />
             </div>
       </>
     );

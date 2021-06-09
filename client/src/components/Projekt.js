@@ -3,6 +3,7 @@ import "./Projekt.css";
 import img1 from "../images/1.jpg";
 import img2 from "../images/2.jpg";
 import img3 from "../images/3.jpg";
+import img4 from "../images/4.jpg";
 import car from "../video/car.mp4";
 import galaxy from "../video/galaxy_3.mp4";
 
@@ -15,11 +16,11 @@ function Projekt()
                 <table>
                     <thead>
                     <tr>
-                        <td>
+                        <th>
                             <video autoPlay loop muted className="car-video">
                                 <source src={car} type="video/mp4" />
-                            </video></td>
-                        <td><img src={img2} alt="Mars"></img></td>
+                            </video></th>
+                        <th><img src={img2} alt="Mars"></img></th>
                     </tr>
                     </thead>
                     <tbody>
@@ -35,6 +36,10 @@ function Projekt()
                     </tr>
                     </tbody>
                 </table>
+                <h1>Folyamatban</h1>
+                <div className="soon">
+                    <img src={img4} alt="szint"></img>
+                </div>
             </div>
       </>
     );

@@ -4,9 +4,12 @@ const mongoose = require('mongoose');
 const morgan = require('morgan');
 const path = require('path');
 
-var httpsRedirect = require('express-https-redirect');
 const app = express();
 const PORT = process.env.PORT || 8080; // Step 1
+
+var redirector = require("redirect-https")({
+    body: "<!-- Hello Developer! Please use HTTPS instead: {{ URL }} -->"
+});
 
 const routes = require('./routes/api');
 
@@ -33,6 +36,6 @@ if (process.env.NODE_ENV === 'production') {
 // HTTP request logger
 app.use(morgan('tiny'));
 app.use('/api', routes);
-app.use('/', httpsRedirect());
+app.use("/", redirector);
 
 app.listen(PORT, console.log(`Server is starting at ${PORT}`));

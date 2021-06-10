@@ -11,7 +11,7 @@ function Content()
     return (
         <>
             <div id="home" className="video-div"> <div dangerouslySetInnerHTML={{ __html: `
-                <video playsInline autoPlay={true} loop muted class="home-video">
+                <video playsInline autoplay loop muted class="home-video">
                     <source src="${particles}" type="video/mp4" />
                 </video>
                 ` }}

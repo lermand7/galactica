@@ -18,7 +18,7 @@ function Projekt()
                     <tr>
                         <th>
                             <div dangerouslySetInnerHTML={{ __html: `
-                                <video autoPlay loop muted class="car-video">
+                                <video autoplay loop muted class="car-video">
                                     <source src="${car}" type="video/mp4" />
                                 </video></th>
                                 ` }}
@@ -35,7 +35,7 @@ function Projekt()
                     <tr>
                         <td colSpan="2">
                         <div dangerouslySetInnerHTML={{ __html: `
-                                <video autoPlay loop muted class="car-video">
+                                <video autoplay loop muted class="car-video">
                                     <source src="${galaxy}" type="video/mp4" />
                                 </video></th>
                                 ` }}

@@ -11,7 +11,7 @@ function Content()
     return (
         <>
             <div id="home" className="video-div"> <div dangerouslySetInnerHTML={{ __html: `
-                <video playsInline autoplay loop muted class="home-video">
+                <video playsInline preload autoPlay={true} loop muted class="home-video">
                     <source src="${particles}" type="video/mp4" />
                 </video>
                 ` }}
@@ -19,7 +19,7 @@ function Content()
                 <div className="home-div">
                     <div className="home-div-center">
                         <h1>ÜDVÖZÖLLEK, UTAZÓ!</h1>
-                        <Link to="about-link" spy={true} smooth={true} offset={-80} duration={700} className="nav-link">
+                        <Link to="about-div" spy={true} smooth={true} offset={-80} duration={700} className="nav-link">
                             <i className="fa fa-angle-double-down"></i>
                         </Link>
                     </div>

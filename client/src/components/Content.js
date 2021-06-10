@@ -10,11 +10,10 @@ function Content()
 {
     return (
         <>
-            <div id="home" className="video-div">
-            dangerouslySetInnerHTML={{ __html: `
+            <div id="home" className="video-div" dangerouslySetInnerHTML={{ __html: `
                 <video playsInline autoPlay={true} loop muted className="home-video">
                     <source src={particles} type="video/mp4" />
-                </video>` }}
+                </video>
                 <div className="home-div">
                     <div className="home-div-center">
                         <h1>ÜDVÖZÖLLEK, UTAZÓ!</h1>
@@ -22,8 +21,8 @@ function Content()
                             <i className="fa fa-angle-double-down"></i>
                         </Link>
                     </div>
-                </div>
-            </div>
+                    ` }}
+            />
             <div className="about-wrapper">
                 <About />
             </div>

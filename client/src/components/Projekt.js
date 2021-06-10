@@ -17,9 +17,13 @@ function Projekt()
                     <thead>
                     <tr>
                         <th>
-                            <video autoPlay loop muted className="car-video">
-                                <source src={car} type="video/mp4" />
-                            </video></th>
+                            <div dangerouslySetInnerHTML={{ __html: `
+                                <video autoPlay loop muted class="car-video">
+                                    <source src="${car}" type="video/mp4" />
+                                </video></th>
+                                ` }}
+                            />
+                        </th>
                         <th><img src={img2} alt="Mars"></img></th>
                     </tr>
                     </thead>
@@ -30,9 +34,12 @@ function Projekt()
                     </tr>
                     <tr>
                         <td colSpan="2">
-                        <video autoPlay loop muted className="car-video">
-                                <source src={galaxy} type="video/mp4" />
-                            </video></td>
+                        <div dangerouslySetInnerHTML={{ __html: `
+                                <video autoPlay loop muted class="car-video">
+                                    <source src="${galaxy}" type="video/mp4" />
+                                </video></th>
+                                ` }}
+                            /></td>
                     </tr>
                     </tbody>
                 </table>

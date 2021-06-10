@@ -4,14 +4,14 @@ import "./Content.css";
 import About from "./About.js";
 import Projekt from "./Projekt.js";
 import Contact from "./Contact.js";
-import particles from "../video/particles_1.mp4";
+import particles from "../video/particles.mp4";
 
 function Content()
 {
     return (
         <>
             <div id="home" className="video-div">
-                <video autoPlay loop muted className="home-video">
+                <video playsInline autoPlay={true} loop muted className="home-video">
                     <source src={particles} type="video/mp4" />
                 </video>
                 <div className="home-div">

@@ -6,11 +6,28 @@ import "./NavBar.css";
 function NavBar()
 {
     const [click, setClick] = useState(false);
+    const [atBottom, setActive] = useState(false);
 
-    function handleClick(isLink)
+    function handleClick()
     {
         setClick(!click);
     }
+
+    window.onscroll = function() {
+        var d = document.documentElement;
+        var offset = d.scrollTop + window.innerHeight;
+        var height = d.offsetHeight;
+      
+        console.log('offset = ' + offset);
+        console.log('height = ' + height);
+      
+        if (offset >= height) {
+          setActive(true);
+        }
+        else{
+            setActive(false);
+        }
+      };
 
     return (
         <>
@@ -22,7 +39,7 @@ function NavBar()
                     <div className="nav-spacer"></div>
                     <ul className={click ? "nav-menu active" : "nav-menu"}>
                         <li className="nav-item">
-                            <Link activeClass="active" to="home" spy={true} smooth={true} offset={-80} duration={700} className="nav-link" onClick={handleClick}>
+                            <Link to="home" spy={true} smooth={true} offset={-80} duration={700} className="nav-link" onClick={handleClick}>
                                 Haza
                             </Link>
                         </li>
@@ -32,12 +49,12 @@ function NavBar()
                             </Link>
                         </li>
                         <li className="nav-item">
-                            <Link to="projekt" spy={true} smooth={true} offset={-80} duration={700} className="nav-link" onClick={handleClick}>
+                            <Link to="projekt" spy={true} smooth={true} offset={-80} duration={700} activeClass={atBottom ? "inactive" : ""} className={atBottom ? "nav-link" : "nav-link"} onClick={handleClick}>
                                 Projektek
                             </Link>
                         </li>
                         <li className="nav-item">
-                            <Link to="more" spy={true} smooth={true} offset={-80} duration={700} className="nav-link" onClick={handleClick}>
+                            <Link to="more" spy={true} smooth={true} offset={-400} duration={700} className={atBottom ? "nav-link active" : "nav-link"} onClick={handleClick}>
                                 Kapcsolat
                             </Link>
                         </li>

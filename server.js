@@ -1,4 +1,3 @@
-// Import npm packages
 const express = require('express');
 const mongoose = require('mongoose');
 const morgan = require('morgan');
@@ -27,13 +26,11 @@ if (process.env.NODE_ENV === 'production') {
 
 app.use(morgan('tiny'));
 app.use('/api', routes);
-app.use(function(request, response, next) {
-
-    if (process.env.NODE_ENV === 'production' && !request.secure) {
-       return response.redirect("https://" + request.headers.host + request.url);
+app.use((req, res, next) => {
+    if (!req.secure) {
+      return res.redirect('https://www.' + req.get('host') + req.url);
     }
-
-    next();
-})
+    next()
+  })
 
 app.listen(PORT, console.log(`Server is starting at ${PORT}`));

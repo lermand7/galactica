@@ -4,6 +4,7 @@ const morgan = require('morgan');
 
 const app = express();
 app.enable('trust proxy');
+app.use(requireHTTPS);
 const PORT = process.env.PORT || 8080;
 
 const routes = require('./routes/api');
@@ -26,11 +27,11 @@ if (process.env.NODE_ENV === 'production') {
 
 app.use(morgan('tiny'));
 app.use('/api', routes);
-app.use((req, res, next) => {
-    if (!req.secure) {
-      return res.redirect('https://www.' + req.get('host') + req.url);
+function requireHTTPS(req, res, next) {
+    if (!req.secure && req.get('x-forwarded-proto') !== 'https' && process.env.NODE_ENV !== "development") {
+      return res.redirect('https://' + req.get('host') + req.url);
     }
-    next()
-  })
+    next();
+  }
 
 app.listen(PORT, console.log(`Server is starting at ${PORT}`));

@@ -29,7 +29,7 @@ app.use(morgan('tiny'));
 app.use('/api', routes);
 app.use(function(request, response, next) {
 
-    if (process.env.NODE_ENV == 'production' && !request.secure) {
+    if (process.env.NODE_ENV === 'production' && !request.secure) {
        return response.redirect("https://" + request.headers.host + request.url);
     }
 

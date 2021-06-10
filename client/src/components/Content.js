@@ -12,7 +12,7 @@ function Content()
         <>
             <div id="home" className="video-div" dangerouslySetInnerHTML={{ __html: `
                 <video playsInline autoPlay={true} loop muted className="home-video">
-                    <source src={particles} type="video/mp4" />
+                    <source src="${particles}" type="video/mp4" />
                 </video>
                 <div className="home-div">
                     <div className="home-div-center">

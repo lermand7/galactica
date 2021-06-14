@@ -41,7 +41,7 @@ function NavBar()
                             </Link>
                         </li>
                         <li className="nav-item">
-                            <Link to="about-link" spy={true} smooth={true} offset={-80} duration={700} className="nav-link" onClick={handleClick}>
+                            <Link to="about-div-wrapper" spy={true} smooth={true} offset={-80} duration={700} className="nav-link" onClick={handleClick}>
                                 Rólam
                             </Link>
                         </li>

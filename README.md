@@ -1,2 +1,1 @@
-# galactica
- 
+# [Galactica](https://galaxis.me)

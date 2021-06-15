@@ -4,7 +4,7 @@ import "./Content.css";
 import About from "./About.js";
 import Projekt from "./Projekt.js";
 import Contact from "./Contact.js";
-import particles from "../video/particles.mp4";
+import particles from "../video/particles_1.mp4";
 
 function Content()
 {
